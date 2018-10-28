@@ -76,5 +76,6 @@ minetest.register_chatcommand("setspawn", {
 end)
 		end
 	end
+	return true, "Spawn of " ..target_name.. " set."
 end
 })
