@@ -2,7 +2,6 @@
 -- spawnpoint --
 -- -- --
 
-		local t = 1
 minetest.register_privilege("setspawn", {
 	description = "Can use /setspawn command",
 	give_to_singleplayer = false
@@ -16,8 +15,6 @@ minetest.register_chatcommand("setspawn", {
 		local target = nil
 		local p = {}
 		local targetn = nil
-		local player1 = nil
-		local player2 = nil
 		local lm = 31000
 		targetn_t, p.x, p.y, p.z = param:match(
 				"^([^ ]+) +([%d.-]+)[, ] *([%d.-]+)[, ] *([%d.-]+)$")
@@ -38,27 +35,16 @@ minetest.register_chatcommand("setspawn", {
 					end
 			target = core.get_player_by_name(targetn_t)	
 				minetest.register_on_respawnplayer(function(player)
-					local player = core.get_player_by_name(targetn_t)
-    					local pos = ({x=p.x, y=p.y, z=p.z})
-					local player1 = player:get_player_name()
-					if "" ..player1.. "" ~= target then
-						local name = player:get_player_name()
+					local pos = ({x=p.x, y=p.y, z=p.z})
+					local name = player:get_player_name()
+					if target == player then
 						if pos then
-							player:setpos({x=p.x, y=p.y, z=p.z})
-							return true, "Test1"
-						end
-					else
-						if pos then
-							playe:setpos(({x=0, y=0, z=0}))
-							return true, "Test2"
+							player:setpos(pos)
 						end
 					end
 end)
 		end
 	return true, "Spawn of " ..targetn_t.. " set."
 	end
-	local t = t+1
-	targetn_t = nil
-	target = nil
 end
 })
