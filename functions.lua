@@ -40,6 +40,7 @@ minetest.register_chatcommand("setspawn", {
 					if target == player then
 						if pos then
 							player:setpos(pos)
+							return true
 						end
 					end
 end)
