@@ -379,7 +379,7 @@ minetest.register_node("parabellum:iron_chest", {
 -- Palladium Chest --
 -- -- --
 minetest.register_node("parabellum:palladium_chest", {
-    description = ("The Parabellum's Chest"),
+    description = ("The Palladium's Chest"),
 
     tiles = {"parabellum_palladiumchest.png"},
 
@@ -523,7 +523,7 @@ minetest.register_node("parabellum:palladium_chest", {
                     local metaAccessString = index.."p";
                     local probability = meta:get_int(metaAccessString);
                     print("wield list name = "..player:get_wield_list());
-					if wieldname == "parabellum:parabellum_key" then
+					if wieldname == "parabellum:palladium_key" then
 						if (randomCheck(probability)) then
                         local itemStackToAdd = nodeInv:get_stack("main", index+1);  -- +1 for inventory indexing begins at 1
                         itemStackToAdd = playerInv:add_item("main", itemStackToAdd);
@@ -532,7 +532,7 @@ minetest.register_node("parabellum:palladium_chest", {
                         end
 						end
 					else
-						minetest.chat_send_player(playerName, ("You haven't the parabellum key!"))
+						minetest.chat_send_player(playerName, ("You haven't the palladium key!"))
 					end
 					end
 					if not creative.is_enabled_for(playerName) and wieldname == "parabellum:palladium_key" then
