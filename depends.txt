@@ -1,6 +1,7 @@
 default
 mobs
 
+factions?
 tnt?
 mcl_throwing?
 throwing?
