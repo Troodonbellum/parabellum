@@ -126,7 +126,7 @@ mobs:register_arrow(":parabellum:fireball", {
 
 	-- direct hit, no fire... just plenty of pain
 	hit_player = function(self, player)
-	minetest.sound_play("tnt_explode", {pos = pos, gain = 1.5, max_hear_distance = 16})
+		minetest.sound_play("tnt_explode", {pos = self.object:getpos(), gain = 1.5, max_hear_distance = 16})
 		player:punch(self.object, 1.0, {
 			full_punch_interval = 0.5,
 			damage_groups = {fleshy = 8},
@@ -135,7 +135,7 @@ mobs:register_arrow(":parabellum:fireball", {
 	end,
 
 	hit_mob = function(self, player)
-	minetest.sound_play("tnt_explode", {pos = pos, gain = 1.5,max_hear_distance = 16})
+	minetest.sound_play("tnt_explode", {pos = self.object:getpos(), gain = 1.5,max_hear_distance = 16})
 		player:punch(self.object, 1.0, {
 			full_punch_interval = 0.5,
 			damage_groups = {fleshy = 8},
