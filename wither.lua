@@ -71,7 +71,7 @@ mobs:register_mob("parabellum:wither", {
 	blood_amount = 0,
 })
 
-local mobs_griefing = minetest.settings:get_bool("mobs_griefing") ~= false
+local mobs_griefing = true --minetest.settings:get_bool("mobs_griefing") ~= false
 
 mobs:register_arrow("parabellum:roar_of_the_dragon", {
 	visual = "sprite",
@@ -120,6 +120,8 @@ mobs:register_arrow("parabellum:roar_of_the_dragon", {
 })
 --GOOD LUCK LOL!
 -- fireball (weapon)
+local factions = minetest.get_modpath("factions") and factions
+
 mobs:register_arrow(":parabellum:fireball", {
 	visual = "sprite",
 	visual_size = {x = 0.75, y = 0.75},
@@ -149,11 +151,24 @@ mobs:register_arrow(":parabellum:fireball", {
 	-- node hit, bursts into flame
 	hit_node = function(self, pos, node)
 		-- FIXME: Deprecated, switch to mobs:boom instead
-		mobs:explosion(pos, 3, 0, 1)
+		if factions and factions.get_parcel_faction(factions.get_parcel_pos(pos)) then
+			tnt.boom(
+				pos,
+				{
+					radius = 3,
+					damage_radius = 3,
+					sound = self.sounds and self.sounds.explode,
+					explode_center = true,
+					ignore_protection = true,
+				})
+		else
+			--mobs:explosion(pos, 3, 0, 1)
+			mobs:boom(self, pos, 3)
+		end
 	end
 })
 --Spawn egg
 mobs:register_egg("parabellum:wither", S("Wither"), "parabellum_spawn_icon_wither.png", 0)
 
 --Compatibility
-mobs:alias_mob("nssm:mese_dragon", "parabellum:wither")	
+mobs:alias_mob("nssm:mese_dragon", "parabellum:wither") 
