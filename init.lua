@@ -1,21 +1,23 @@
 local modpath = minetest.get_modpath("parabellum")
 
 -- Load files
-
-
 dofile(modpath .. "/functions.lua")
-dofile(modpath .. "/epreuve.lua")
-dofile(modpath .. "/paint.lua")
-dofile(modpath .. "/box.lua")
-dofile(modpath .. "/treasure_chest.lua")
 dofile(modpath .. "/utils.lua")
---MOB ITEMS SELECTOR SWITCH
 
---Mob heads
-dofile(modpath .. "/heads.lua")
+--Box
+dofile(modpath .. "/box/box.lua")
+dofile(modpath .. "/box/treasure_chest.lua")
 
---Monsters
-dofile(modpath .. "/wither.lua")
+--Hammer
+dofile(modpath .. "/hammer/hammer.lua")
+
+--Mobs
+dofile(modpath .. "/mobs/heads.lua")
+dofile(modpath .. "/mobs/wither.lua")
+
+--Parabellum_Nodes
+dofile(modpath .. "/parabellum_nodes/epreuve.lua")				--Echangeur & Trophé
+dofile(modpath .. "/parabellum_nodes/paint.lua")					--Bannière
 
 if not minetest.get_modpath("parabellum_gameconfig") then
 	parabellum = {}
