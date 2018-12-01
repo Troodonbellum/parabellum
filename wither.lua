@@ -1,8 +1,3 @@
---MCmobs v0.4
---maikerumine
---made for MC like Survival game
---License for code WTFPL and otherwise stated in readmes
-
 -- intllib
 local MP = minetest.get_modpath(minetest.get_current_modname())
 local S, NS = dofile(MP.."/intllib.lua")
@@ -10,9 +5,9 @@ local S, NS = dofile(MP.."/intllib.lua")
 --dofile(minetest.get_modpath("mobs").."/api.lua")
 
    
---###################
---################### WITHER
---###################
+-- -- --
+-- Wither --
+-- -- --
 
 mobs:register_mob("parabellum:wither", {
 	type = "monster",
@@ -171,4 +166,4 @@ mobs:register_arrow(":parabellum:fireball", {
 mobs:register_egg("parabellum:wither", S("Wither"), "parabellum_spawn_icon_wither.png", 0)
 
 --Compatibility
-mobs:alias_mob("nssm:mese_dragon", "parabellum:wither")	
+mobs:alias_mob("nssm:mese_dragon", "parabellum:wither") 
