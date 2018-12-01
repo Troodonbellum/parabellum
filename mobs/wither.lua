@@ -4,7 +4,6 @@ local S, NS = dofile(MP.."/intllib.lua")
 
 --dofile(minetest.get_modpath("mobs").."/api.lua")
 
-   
 -- -- --
 -- Wither --
 -- -- --
