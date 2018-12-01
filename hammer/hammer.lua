@@ -1,6 +1,5 @@
 local player = minetest.get_player_by_name()
 
---cx384 helped me with the following code:
 local dig_range_increase = {}
 dig_range_increase["parabellum:hammer"] = 1
 
