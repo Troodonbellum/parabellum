@@ -45,9 +45,9 @@ mobs:register_mob("parabellum:wither", {
    drops = {
       {name = "default:diamond", chance = 1, min = 1, max = 1},
 },
-	water_damage = 2,
-	lava_damage = 2,
-	acid_damage = 2,
+	water_damage = 8,
+	lava_damage = 8,
+	acid_damage = 8,
 	light_damage = 0,
 	attack_type = "dogshoot",
 	explosion_radius = 3,
