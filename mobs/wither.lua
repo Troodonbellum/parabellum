@@ -47,6 +47,7 @@ mobs:register_mob("parabellum:wither", {
 },
 	water_damage = 2,
 	lava_damage = 2,
+	acid_damage = 2,
 	light_damage = 0,
 	attack_type = "dogshoot",
 	explosion_radius = 3,
@@ -149,15 +150,15 @@ mobs:register_arrow(":parabellum:fireball", {
 			tnt.boom(
 				pos,
 				{
-					radius = 3,
+					radius = 2.5,
 					damage_radius = 3,
 					sound = self.sounds and self.sounds.explode,
 					explode_center = true,
 					ignore_protection = true,
 				})
 		else
-			--mobs:explosion(pos, 3, 0, 1)
-			mobs:boom(self, pos, 3)
+			--mobs:explosion(pos, 2.5, 0, 1)
+			mobs:boom(self, pos, 2.5)
 		end
 	end
 })
