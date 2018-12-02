@@ -80,6 +80,7 @@ local function addhead(mobname, desc, longdesc)
 		minetest.remove_node({x=pos.x+1, y=pos.y-1, z=pos.z})
 		minetest.remove_node({x=pos.x-1, y=pos.y, z=pos.z})
 		minetest.remove_node({x=pos.x+1, y=pos.y, z=pos.z})
+		mobs:explosion(pos, 3, 0, 1)
 				end
 			end
 			if node13 == "air" and node15 == "parabellum:head_wither_skeleton" and node17 == "default:obsidian" and node19 == "air" then
@@ -92,6 +93,7 @@ local function addhead(mobname, desc, longdesc)
 		minetest.remove_node({x=pos.x, y=pos.y-1, z=pos.z+1})
 		minetest.remove_node({x=pos.x, y=pos.y, z=pos.z-1})
 		minetest.remove_node({x=pos.x, y=pos.y, z=pos.z+1})
+		mobs:explosion(pos, 3, 0, 1)
 				end
 			end
 		end
