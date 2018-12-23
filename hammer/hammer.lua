@@ -11,6 +11,45 @@ minetest.register_craftitem("parabellum:super_stick", {
 	groups = {stick = 1},
 })
 
+-- Cuisson des items | Double le drop des items cuits
+local old_handle_node_drops = minetest.handle_node_drops
+
+function minetest.handle_node_drops(pos, drops, digger)
+
+	if digger:get_wielded_item():get_name() ~= ("parabellum:hammer") then
+		return old_handle_node_drops(pos, drops, digger)
+	end
+
+	local hot_drops = {}
+
+	for _, drop in pairs(drops) do
+
+		local stack = ItemStack(drop)
+		local output = minetest.get_craft_result({
+			method = "cooking",
+			width = 1,
+			items = {drop}
+		})
+
+		if output
+		and output.item
+		and not output.item:is_empty() then
+
+			table.insert(hot_drops,
+				ItemStack({
+					name = output.item:get_name(),
+					count = output.item:to_table().count,
+				})
+			)
+			old_handle_node_drops(pos, hot_drops, digger)
+		else -- if not then return normal drops
+			table.insert(hot_drops, stack)
+		end
+	end
+
+	return old_handle_node_drops(pos, hot_drops, digger)
+end
+
 minetest.register_tool("parabellum:hammer", {
    description = "Parabellum Hammer",
    inventory_image = "parabellum_hammer.png",
@@ -20,7 +59,7 @@ minetest.register_tool("parabellum:hammer", {
       groupcaps={
          cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=500, maxlevel=2},
       },
-      damage_groups = {fleshy=5},
+      damage_groups = {fleshy=6,fire=1},
    },
    sound = {breaks = "default_tool_breaks"},
 })
