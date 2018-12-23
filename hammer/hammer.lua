@@ -11,6 +11,15 @@ minetest.register_craftitem("parabellum:super_stick", {
 	groups = {stick = 1},
 })
 
+minetest.register_craft({
+	output = 'parabellum:super_stick',
+	recipe = {
+		{'xtraores:platinum_bar', 'xtraores:platinum_bar', 'xtraores:platinum_bar'},
+		{'', '', ''},
+		{'', '', ''},
+	}
+})
+
 -- Cuisson des items | Double le drop des items cuits
 local old_handle_node_drops = minetest.handle_node_drops
 
@@ -153,13 +162,5 @@ minetest.register_craft({
 		{'xtraores:palladium_bar', 'xtraores:palladium_bar', 'xtraores:palladium_bar'},
 		{'', 'parabellum:super_stick', ''},
 		{'', 'parabellum:super_stick', ''},
-	}
-})
-minetest.register_craft({
-	output = 'parabellum:super_stick',
-	recipe = {
-		{'xtraores:platinium_bar', 'xtraores:platinium_bar', 'xtraores:platinium_bar'},
-		{'', '', ''},
-		{'', '', ''},
 	}
 })
