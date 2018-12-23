@@ -14,9 +14,9 @@ minetest.register_craftitem("parabellum:super_stick", {
 minetest.register_craft({
 	output = 'parabellum:super_stick',
 	recipe = {
-		{'xtraores:platinum_bar', 'xtraores:platinum_bar', 'xtraores:platinum_bar'},
-		{'', '', ''},
-		{'', '', ''},
+		{'xtraores:platinum_bar', '', ''},
+		{'', 'xtraores:platinum_bar', ''},
+		{'', '', 'xtraores:platinum_bar'},
 	}
 })
 
