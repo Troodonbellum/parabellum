@@ -1,0 +1,17 @@
+item_bronze = {
+
+}
+item_steel = {
+	
+}
+item_palladium = {
+	"parabellum:head_wither_skeleton 3",
+	"parabellum:head_wither_skeleton 3",
+	"parabellum:head_wither_skeleton 3",
+	"parabellum:head_wither_skeleton 3",
+	"parabellum:head_wither_skeleton 3",
+	"xtraores:palladium_bar"
+}
+item_ulti = {
+	
+}
