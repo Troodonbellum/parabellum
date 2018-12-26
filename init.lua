@@ -6,6 +6,7 @@ dofile(modpath .. "/utils.lua")
 
 --Box
 dofile(modpath .. "/box/box.lua")
+dofile(modpath .. "/box/item_list.lua")
 dofile(modpath .. "/box/treasure_chest.lua")
 
 --Hammer
