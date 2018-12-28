@@ -15,6 +15,7 @@ dofile(modpath .. "/hammer/hammer.lua")
 --Mobs
 dofile(modpath .. "/mobs/heads.lua")
 dofile(modpath .. "/mobs/wither.lua")
+dofile(modpath .. "/mobs/minotaur.lua")
 
 --Parabellum_Nodes
 dofile(modpath .. "/parabellum_nodes/epreuve.lua")				--Echangeur & Trophé
