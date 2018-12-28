@@ -240,13 +240,6 @@ minetest.register_on_leaveplayer(function(player)
     openedTreasureChestConfigs[playerName] = nil;
 end)
 
-        if player:get_player_name() == owner or privs.give then
-            return true;
-        else
-            return false;
-        end
-    end,
-
     after_place_node =
     function(pos, placer, itemstack, pointed_thing)
         local meta = minetest.get_meta(pos);
