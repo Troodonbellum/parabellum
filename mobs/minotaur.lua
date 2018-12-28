@@ -21,12 +21,12 @@ collisionbox = {-0.9,-0.01,-0.9, 0.9,2.5,0.9},
 	blood_texture = "parabellum_blood.png",
 	-- sounds
 	makes_footstep_sound = true,
-	-- sounds = {
-		-- random = "mobs_zombie",
-		-- damage = "mobs_zombie_hit",
-		-- attack = "mobs_zombie_attack",
-		-- death = "mobs_zombie_death",
-	-- },
+	sounds = {
+		random = "parabellum_zombie",
+		damage = "parabellum_zombie_hit",
+		attack = "parabellum_zombie_attack",
+		death = "parabellum_zombie_death",
+	},
 	-- speed and jump
 	walk_velocity = 3,
 	run_velocity = 4,
