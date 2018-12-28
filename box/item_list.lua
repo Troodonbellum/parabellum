@@ -37,7 +37,8 @@ item_bronze = {
 	"currency:minegeld_50 100"
 	}
 item_steel = {
-	
+	"grenade:dynamitebig 100",
+	"bobblocks:trap_spike_major 150",
 }
 item_palladium = {
 	"parabellum:head_wither_skeleton 3",
