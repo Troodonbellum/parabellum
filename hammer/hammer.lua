@@ -8,15 +8,14 @@ local dig_hand_digable = true
 minetest.register_craftitem("parabellum:super_stick", {
 	description = "Super Stick",
 	inventory_image = "parabellum_superstick.png",
-	groups = {stick = 1},
 })
 
 minetest.register_craft({
 	output = 'parabellum:super_stick',
 	recipe = {
-		{'xtraores:rheninum_bar', '', ''},
-		{'', 'xtraores:rheninum_bar', ''},
-		{'', '', 'xtraores:rheninum_bar'},
+		{'xtraores:rhenium_bar', '', ''},
+		{'', 'xtraores:rhenium_bar', ''},
+		{'', '', 'xtraores:rhenium_bar'},
 	}
 })
 
