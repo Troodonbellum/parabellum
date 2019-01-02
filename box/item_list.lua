@@ -1,6 +1,15 @@
 item_bronze = {
-	--30 Lingots de Rarium : 3,33%
-	"xtraores:rarium_bar 30",
+	--Pour chaque : 16,66%
+	"nalc_default:acid_source 99",
+	"grenade:dynamitebig 150",
+	"bobblocks:trap_spike_major 150",
+	"default:obsidian 300",
+	"mobs_monster:oerki 20",
+	"xdecor:cobweb 500"
+	}
+item_steel = {
+	--31 Lingots de Rarium : 3,33%
+	"xtraores:rarium_bar 31",
 	--25 Noclip Blocks : 13,33%
 	"noclip_block:noclip_block 25",
 	"noclip_block:noclip_block 25",
@@ -35,32 +44,23 @@ item_bronze = {
 	"currency:minegeld_50 100",
 	"currency:minegeld_50 100",
 	"currency:minegeld_50 100"
-	}
-item_steel = {
-	--Pour chaque : 16,66%
-	"nalc_default:acid_source 30",
-	"grenade:dynamitebig 100",
-	"bobblocks:trap_spike_major 150",
-	"default:obsidian 300",
-	"mobs_monster:oerki 20",
-	"xdecor:cobweb 500"
 }
 item_palladium = {
 	--Lingot d'unobtanium : 4%
 	"dmobs:unobtanium_bar",
 	--Lingot orichalcum : 8%
-	"xtraores:orichalcum_bar 10",
-	"xtraores:orichalcum_bar 10",
+	"xtraores:orichalcum_bar 31",
+	"xtraores:orichalcum_bar 31",
 	--Power Banner : 16%
-	"banners:power_banner",
-	"banners:power_banner",
-	"banners:power_banner",
-	"banners:power_banner",
-	--Lingot de palladium : 16%
-	"xtraores:palladium_bar 5",
-	"xtraores:palladium_bar 5",
-	"xtraores:palladium_bar 5",
-	"xtraores:palladium_bar 5",
+	"banners:power_banner 5",
+	"banners:power_banner 5",
+	"banners:power_banner 5",
+	"banners:power_banner 5",
+	--Block de palladium : 16%
+		"xtraores:palladium_block 125",
+	"xtraores:palladium_block 125",
+	"xtraores:palladium_block 125",
+	"xtraores:palladium_block 125",
 	--Tête de wither : 24%
 	"parabellum:head_wither_skeleton 9",
 	"parabellum:head_wither_skeleton 9",
@@ -80,24 +80,24 @@ item_palladium = {
 }
 item_ulti = {
 	--Lingot d'ultigemite : 6,66%
-	"xtraores:ultigemite_bar",
-	"xtraores:ultigemite_bar",
+	"xtraores:ultigemite_bar 2",
+	"xtraores:ultigemite_bar 2",
 	--Lingot d'orichalcum : 10%
-	"xtraores:orichalcum_bar 10",
-	"xtraores:orichalcum_bar 10",
-	"xtraores:orichalcum_bar 10",
-	--Lingot d'unobtanium : 13?33%
+	"xtraores:orichalcum_bar 60",
+	"xtraores:orichalcum_bar 60",
+	"xtraores:orichalcum_bar 60",
+	--Lingot d'unobtanium : 13,33%
 	"dmobs:unobtanium_bar",
 	"dmobs:unobtanium_bar",
 	"dmobs:unobtanium_bar",
 	"dmobs:unobtanium_bar",
 	--Power Banner : 20%
-	"banners:power_banner",
-	"banners:power_banner",
-	"banners:power_banner",
-	"banners:power_banner",
-	"banners:power_banner",
-	"banners:power_banner",
+	"banners:power_banner 10",
+	"banners:power_banner 10",
+	"banners:power_banner 10",
+	"banners:power_banner 10",
+	"banners:power_banner 10",
+	"banners:power_banner 10",
 	--Tête de wither : 23,33
 	"parabellum:head_wither_skeleton 12",
 	"parabellum:head_wither_skeleton 12",
