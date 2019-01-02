@@ -57,10 +57,10 @@ item_palladium = {
 	"banners:power_banner 5",
 	"banners:power_banner 5",
 	--Block de palladium : 16%
-		"xtraores:palladium_block 125",
-	"xtraores:palladium_block 125",
-	"xtraores:palladium_block 125",
-	"xtraores:palladium_block 125",
+	"xtraores:block_palladium 125",
+	"xtraores:block_palladium 125",
+	"xtraores:block_palladium 125",
+	"xtraores:block_palladium 125",
 	--Tête de wither : 24%
 	"parabellum:head_wither_skeleton 9",
 	"parabellum:head_wither_skeleton 9",
