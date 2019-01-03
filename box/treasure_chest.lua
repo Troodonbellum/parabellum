@@ -14,9 +14,8 @@ minetest.register_node("parabellum:bronze_chest", {
         local playerName = player:get_player_name();
         local meta = minetest.get_meta(pos);
         local privs = minetest.get_player_privs(playerName);
-        local owner = meta:get_string(metaStrOwner);
 
-        if player:get_player_name() == owner or privs.give then
+        if player:get_player_name() == privs.give then
             return true;
         else
             return false;
@@ -65,9 +64,8 @@ minetest.register_node("parabellum:iron_chest", {
         local playerName = player:get_player_name();
         local meta = minetest.get_meta(pos);
         local privs = minetest.get_player_privs(playerName);
-        local owner = meta:get_string(metaStrOwner);
 
-        if player:get_player_name() == owner or privs.give then
+        if player:get_player_name() == privs.give then
             return true;
         else
             return false;
@@ -116,9 +114,8 @@ minetest.register_node("parabellum:palladium_chest", {
         local playerName = player:get_player_name();
         local meta = minetest.get_meta(pos);
         local privs = minetest.get_player_privs(playerName);
-        local owner = meta:get_string(metaStrOwner);
 
-        if player:get_player_name() == owner or privs.give then
+        if player:get_player_name() == privs.give then
             return true;
         else
             return false;
@@ -167,9 +164,8 @@ minetest.register_node("parabellum:ultimate_chest", {
         local playerName = player:get_player_name();
         local meta = minetest.get_meta(pos);
         local privs = minetest.get_player_privs(playerName);
-        local owner = meta:get_string(metaStrOwner);
 
-        if player:get_player_name() == owner or privs.give then
+        if player:get_player_name() == privs.give then
             return true;
         else
             return false;
