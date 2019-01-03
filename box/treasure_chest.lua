@@ -7,20 +7,10 @@ minetest.register_node("parabellum:bronze_chest", {
 
     tiles = {"parabellum_bronzechest.png"},
 
-    groups = {cracky = 3},
+    groups = {unbreakable = 1},
     drop = "",
     paramtype2 = "facedir",
-    can_dig = function(pos, player)
-        local playerName = player:get_player_name();
-        local meta = minetest.get_meta(pos);
-        local privs = minetest.get_player_privs(playerName);
 
-        if player:get_player_name() == privs.give then
-            return true;
-        else
-            return false;
-        end
-    end,
 
 	on_rightclick =
     function(nodePos, node, player, clicker, itemstack, pointed_thing)
@@ -57,20 +47,9 @@ minetest.register_node("parabellum:iron_chest", {
 
     tiles = {"parabellum_ironchest.png"},
 
-    groups = {cracky = 3},
+    groups = {unbreakable = 1},
     drop = "",
     paramtype2 = "facedir",
-    can_dig = function(pos, player)
-        local playerName = player:get_player_name();
-        local meta = minetest.get_meta(pos);
-        local privs = minetest.get_player_privs(playerName);
-
-        if player:get_player_name() == privs.give then
-            return true;
-        else
-            return false;
-        end
-    end,
 
 	on_rightclick =
     function(nodePos, node, player, clicker, itemstack, pointed_thing)
@@ -107,20 +86,9 @@ minetest.register_node("parabellum:palladium_chest", {
 
     tiles = {"parabellum_palladiumchest.png"},
 
-    groups = {cracky = 3},
+    groups = {unbreakable = 1},
     drop = "",
     paramtype2 = "facedir",
-    can_dig = function(pos, player)
-        local playerName = player:get_player_name();
-        local meta = minetest.get_meta(pos);
-        local privs = minetest.get_player_privs(playerName);
-
-        if player:get_player_name() == privs.give then
-            return true;
-        else
-            return false;
-        end
-    end,
 
 	on_rightclick =
     function(nodePos, node, player, clicker, itemstack, pointed_thing)
@@ -157,20 +125,9 @@ minetest.register_node("parabellum:ultimate_chest", {
 
     tiles = {"parabellum_ultimatechest.png"},
 
-    groups = {cracky = 3},
+    groups = {unbreakable = 1},
     drop = "",
     paramtype2 = "facedir",
-    can_dig = function(pos, player)
-        local playerName = player:get_player_name();
-        local meta = minetest.get_meta(pos);
-        local privs = minetest.get_player_privs(playerName);
-
-        if player:get_player_name() == privs.give then
-            return true;
-        else
-            return false;
-        end
-    end,
 
 	on_rightclick =
     function(nodePos, node, player, clicker, itemstack, pointed_thing)
