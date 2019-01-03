@@ -4,7 +4,7 @@ item_bronze = {
 	"grenade:dynamitebig 150",
 	"bobblocks:trap_spike_major 150",
 	"default:obsidian 300",
-	"mobs_monster:oerki 20",
+	"mobs_monster:oerkki 20",
 	"xdecor:cobweb 500"
 	}
 item_steel = {
@@ -57,7 +57,7 @@ item_palladium = {
 	"banners:power_banner 5",
 	"banners:power_banner 5",
 	--Block de palladium : 16%
-	"xtraores:block_palladium 125",
+		"xtraores:block_palladium 125",
 	"xtraores:block_palladium 125",
 	"xtraores:block_palladium 125",
 	"xtraores:block_palladium 125",
@@ -80,18 +80,16 @@ item_palladium = {
 }
 item_ulti = {
 	--Lingot d'ultigemite : 6,66%
-	"xtraores:ultigemite_bar 2",
-	"xtraores:ultigemite_bar 2",
+	"xtraores:ultigemite_bar ",
 	--Lingot d'orichalcum : 10%
 	"xtraores:orichalcum_bar 60",
 	"xtraores:orichalcum_bar 60",
-	"xtraores:orichalcum_bar 60",
 	--Lingot d'unobtanium : 13,33%
-	"dmobs:unobtanium_bar",
-	"dmobs:unobtanium_bar",
-	"dmobs:unobtanium_bar",
-	"dmobs:unobtanium_bar",
+	"dmobs:unobtanium_bar 2",
+	"dmobs:unobtanium_bar 2",
+	"dmobs:unobtanium_bar 2",
 	--Power Banner : 20%
+	"banners:power_banner 10",
 	"banners:power_banner 10",
 	"banners:power_banner 10",
 	"banners:power_banner 10",
@@ -106,7 +104,9 @@ item_ulti = {
 	"parabellum:head_wither_skeleton 12",
 	"parabellum:head_wither_skeleton 12",
 	"parabellum:head_wither_skeleton 12",
+	"parabellum:head_wither_skeleton 12",
 	--Billet de 50 : 26,66
+	"currency:minegeld_50 140",
 	"currency:minegeld_50 140",
 	"currency:minegeld_50 140",
 	"currency:minegeld_50 140",
