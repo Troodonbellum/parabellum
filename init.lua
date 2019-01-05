@@ -1,7 +1,6 @@
 local modpath = minetest.get_modpath("parabellum")
 
 -- Load files
-dofile(modpath .. "/functions.lua")
 dofile(modpath .. "/utils.lua")
 
 --Box
