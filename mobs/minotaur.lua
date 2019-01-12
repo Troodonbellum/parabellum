@@ -36,10 +36,10 @@ collisionbox = {-0.9,-0.01,-0.9, 0.9,2.5,0.9},
 	--knock_back = 0.05,	--this is a test
 	-- drops desert_sand and coins when dead
    drops = {
-      {name = "parabellum:minotaur_fur", chance = 2, min = 1, max = 1},
-      {name = "parabellum:minotaur_eye", chance = 2, min = 1, max = 1},
-      {name = "parabellum:minotaur_horn", chance = 2, min = 1, max = 1},
-      {name = "maptools:gold_coin", chance = 2, min = 1, max = 2},
+      {name = "throwing:bow_minotaur_horn",chance = 1, min = 1, maw = 1},	
+      {name = "parabellum:minotaur_fur", chance = 50, min = 1, max = 1},
+      {name = "parabellum:minotaur_eye", chance = 20, min = 1, max = 1},
+      {name = "parabellum:minotaur_horn", chance = 50, min = 1, max = 1},
 },
 	water_damage = 1,
 	lava_damage = 5,
