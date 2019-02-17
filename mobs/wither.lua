@@ -43,7 +43,7 @@ mobs:register_mob("parabellum:wither", {
 	attack_animals = true,
 	floats=1,
    drops = {
-      {name = "default:diamond", chance = 1, min = 1, max = 1},
+      {name = "parabellum:wither_star", chance = 1, min = 1, max = 1},
 },
 	water_damage = 8,
 	lava_damage = 8,
@@ -167,3 +167,8 @@ mobs:register_egg("parabellum:wither", S("Wither"), "parabellum_spawn_icon_withe
 
 --Compatibility
 mobs:alias_mob("nssm:mese_dragon", "parabellum:wither") 
+
+minetest.register_craftitem("parabellum:wither_star", {
+	description = "Wither Star",
+	inventory_image = "parabellum_wither_star.png",
+})
